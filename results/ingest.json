@@ -1,0 +1,48 @@
+{
+  "input": {
+    "topic_events": 200000,
+    "accounts": 20000,
+    "tax_rate_rows": 12,
+    "generate_seconds": 1.1
+  },
+  "output": {
+    "rows": 180048,
+    "rows_with_unmatched_account_region": 0,
+    "expected_checksum": "6fae4584a9515175d5c4e8cce522b9be601611b8ea2308d0c1cc71d1a0a5ac0b"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "ok",
+      "rows": 180048,
+      "seconds": 11.167,
+      "checksum": "6fae4584a9515175d5c4e8cce522b9be601611b8ea2308d0c1cc71d1a0a5ac0b",
+      "matches_oracle": true
+    },
+    {
+      "run": 2,
+      "status": "ok",
+      "rows": 180048,
+      "seconds": 4.66,
+      "checksum": "6fae4584a9515175d5c4e8cce522b9be601611b8ea2308d0c1cc71d1a0a5ac0b",
+      "matches_oracle": true
+    },
+    {
+      "run": 3,
+      "status": "ok",
+      "rows": 180048,
+      "seconds": 4.198,
+      "checksum": "6fae4584a9515175d5c4e8cce522b9be601611b8ea2308d0c1cc71d1a0a5ac0b",
+      "matches_oracle": true
+    }
+  ],
+  "run_statuses_recorded": [
+    "ok",
+    "ok",
+    "ok"
+  ],
+  "replays_identical": true,
+  "iceberg_snapshots_after_3_runs": 5,
+  "invalid_configs_rejected": "13/13",
+  "random_dags_correctly_ordered": "300/300"
+}
